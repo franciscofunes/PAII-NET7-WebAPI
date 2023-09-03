@@ -129,4 +129,3 @@ El proyecto puede ser de tipo consola, Web API o Web MVC.
 -  ```shell
       dotnet build PAII.GuiaEjercicios.sln
    ```
-
