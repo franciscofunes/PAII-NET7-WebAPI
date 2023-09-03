@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PAII.GuiaEjercicios.WebApi.props" />
+</Project>
