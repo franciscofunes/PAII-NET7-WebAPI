@@ -27,6 +27,7 @@ El proyecto puede ser de tipo consola, Web API o Web MVC.
 **TP Nº1** - Introducción a C#:
 
 **Fecha de Entrega:** 4 de Septiembre de 2023, 23:59
+
 **Aclaraciones:** La resolución del ejercicio se encuentra en la siguiente branch `feature/TP-N1-introduccion-csharp`
 
 ### Generalidades
