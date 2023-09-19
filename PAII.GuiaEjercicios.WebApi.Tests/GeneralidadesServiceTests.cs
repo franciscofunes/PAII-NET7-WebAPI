@@ -5,12 +5,10 @@ namespace PAII.GuiaEjercicios.WebApi.Tests;
 
 public partial class GeneralidadesServiceTest
 {
-    [TestFixture]
     public class GeneralidadesServiceTests
     {
         private IGeneralidadesService _generalidadesService;
 
-        [SetUp]
         public void SetUp()
         {
             // Create an instance of your service to be used in each test.
@@ -21,6 +19,8 @@ public partial class GeneralidadesServiceTest
         public void Sumar_ShouldReturnSum()
         {
             // Arrange
+            var _generalidadesService = new GeneralidadesService();
+
             double numero1 = 5;
             double numero2 = 3;
 
@@ -36,6 +36,7 @@ public partial class GeneralidadesServiceTest
         {
             // Arrange
             string cadena = "abcdefgh";
+            var _generalidadesService = new GeneralidadesService();
 
             // Act
             string result = _generalidadesService.CortarCadena(cadena);
@@ -44,11 +45,13 @@ public partial class GeneralidadesServiceTest
             Assert.That(result, Is.EqualTo("abcd"));
         }
 
+
         [Test]
         public void CortarCadena_ShouldThrowExceptionWhenLengthGreaterThan8()
         {
             // Arrange
             string cadena = "abcdefghi"; // el Lenght de la cadena es mayor a 8 caracteres
+            var _generalidadesService = new GeneralidadesService();
 
             // Act and Assert
             Assert.Throws<ArgumentException>(() => _generalidadesService.CortarCadena(cadena));
@@ -59,6 +62,7 @@ public partial class GeneralidadesServiceTest
         {
             // Arrange
             DateTime expected = DateTime.Now;
+            var _generalidadesService = new GeneralidadesService();
 
             // Act
             DateTime result = _generalidadesService.ObtenerFechaHoraActual();
@@ -71,6 +75,9 @@ public partial class GeneralidadesServiceTest
         [Test]
         public void ObtenerComentariosCSharp_ShouldReturnComments()
         {
+            // Arrange
+            var _generalidadesService = new GeneralidadesService();
+
             // Act
             CommentsTypes result = _generalidadesService.ObtenerComentariosCSharp();
 

@@ -3,7 +3,6 @@ using PAII.GuiaEjercicios.WebApi.Enums;
 using PAII.GuiaEjercicios.WebApi.Models;
 namespace PAII.GuiaEjercicios.WebApi.Services;
 
-
 public class ConversionesService : IConversionesService
 {
     public ConversionResult RealizarConversiones(bool valor)
